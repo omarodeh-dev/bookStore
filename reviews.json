@@ -1,0 +1,20 @@
+{
+  "1": [
+    { "user": "Sara", "rating": 5, "text": "Great for beginners" },
+    { "user": "Omar", "rating": 4, "text": "Some chapters are hard" }
+  ],
+  "2": [
+    { "user": "Lina", "rating": 5, "text": "Explains how JS really works" }
+  ],
+  "3": [
+    { "user": "Ali", "rating": 4, "text": "Changed how I name things" },
+    { "user": "Maya", "rating": 3, "text": "A bit long" }
+  ],
+  "4": [
+    { "user": "Yousef", "rating": 5, "text": "Best pictures ever" }
+  ],
+  "5": [
+    { "user": "Noor", "rating": 4, "text": "Very practical" }
+  ],
+  "6": []
+}

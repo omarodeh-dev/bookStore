@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Book Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Book Store</h1>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search books...">
+    <button id="sortBtn">Sort by price</button>
+  </div>
+
+  <p id="info"></p>
+  <p id="message"></p>
+
+  <div class="container">
+    <div id="bookList" class="book-list"></div>
+
+    <div class="cart">
+      <h2>Cart</h2>
+      <ul id="cartList"></ul>
+      <p><b>Total: <span id="total">$0.00</span></b></p>
+      <button id="saveBtn">Save cart</button>
+      <p id="saved"></p>
+    </div>
+  </div>
+
+  <div class="tools">
+    <h2>Async tools</h2>
+    <p>Each button shows one async topic. Results appear in the log.</p>
+    <button id="allBtn">Promise.all</button>
+    <button id="allSettledBtn">Promise.allSettled</button>
+    <button id="raceBtn">Promise.race</button>
+    <button id="anyBtn">Promise.any</button>
+    <button id="slowBtn">Slow request</button>
+    <button id="cancelBtn" disabled>Cancel</button>
+    <button id="loopBtn">Event loop</button>
+    <ul id="log"></ul>
+  </div>
+
+  <button id="topBtn" class="top-btn">↑ Top</button>
+
+  <!-- ES modules don't work when the file is opened by double-click (file://).
+       This normal script shows a message so the page isn't just empty. -->
+  <script>
+    if (location.protocol === "file:") {
+      document.getElementById("info").innerHTML =
+        "<b style='color:red'>This page must be opened with a local server.</b> " +
+        "In VS Code: right-click index.html → Open with Live Server.";
+    }
+  </script>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

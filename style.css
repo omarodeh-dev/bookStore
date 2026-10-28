@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  color: #333;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 6px;
+  width: 200px;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.book-list {
+  flex: 2;
+  min-width: 250px;
+}
+
+.book {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.book h3 {
+  margin: 0 0 5px 0;
+}
+
+.cart {
+  flex: 1;
+  min-width: 220px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  height: fit-content;
+}
+
+.cart li {
+  margin-bottom: 6px;
+}
+
+.cart li button {
+  padding: 2px 6px;
+  background-color: #e74c3c;
+}
+
+#message {
+  color: green;
+}
+
+.sold-out {
+  color: red;
+}
+
+.reviews {
+  color: #555;
+  font-size: 14px;
+}
+
+/* IntersectionObserver adds "visible" when the book scrolls into view */
+.book {
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.book.visible {
+  opacity: 1;
+}
+
+.tools {
+  background-color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.tools button {
+  margin-bottom: 5px;
+}
+
+#log {
+  background-color: #222;
+  color: #eee;
+  font-family: monospace;
+  padding: 10px 10px 10px 25px;
+  min-height: 60px;
+  border-radius: 4px;
+}
+
+#log .ok {
+  color: #7ee787;
+}
+
+#log .error {
+  color: #ff7b72;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
